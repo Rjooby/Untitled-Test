@@ -1,0 +1,26 @@
+.navbar {
+    width: 210px;
+    background-color: grey;
+    height: 100%;
+}
+
+.nav-section-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section-item {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 1px solid black;
+}
+
+.section-item:last-child {
+    border-top: 0;
+}
+
+/*.section-item:not(:last-child) {*/
+    /*border-bottom: 0;*/
+/*}*/
