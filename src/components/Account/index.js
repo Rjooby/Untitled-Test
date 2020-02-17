@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Route } from 'react-router-dom';
 import Settings from './Settings'
 import Profile from './Profile';
@@ -8,9 +8,37 @@ const Account = (props) => {
     const {
         userInfo,
         setInfo,
+        isLoggedIn,
     } = props;
 
     console.log(props);
+
+    const [signInEmail, setEmail] = useState(null);
+
+    const onSignIn = (e) => {
+        e.preventDefault();
+
+    }
+
+    const handleChange = (e) => {
+        console.log(e.target.value);
+        setEmail(e.target.value);
+    }
+
+
+    if (!isLoggedIn) {
+
+        return (
+            <div>
+                You gotta sign in
+                <form className="signin-form" onSubmit={onSignIn}>
+                    <input type="email" onChange={handleChange}/>
+                    <input type="submit" value="Submit"/>
+                </form>
+            </div>
+        )
+    }
+
 
     return (
         <div>

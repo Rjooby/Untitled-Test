@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ebcab91-d0e7-4a14-8404-f122edf574aa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Account/Account.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Account/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Account/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Account/Settings.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Account/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Account/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,14 +21,23 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/App/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="448">
-                  <caret line="37" column="49" lean-forward="true" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
+                <state relative-caret-position="241">
+                  <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/NavigationBar/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="305">
+                  <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
@@ -45,11 +51,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/Account/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+                <state relative-caret-position="221">
+                  <caret line="45" column="33" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="33" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -61,7 +67,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/Activities/Activity.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="375">
-                  <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+                  <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -83,7 +89,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/Activities/index.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="75">
-                  <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+                  <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -91,14 +97,23 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Settings.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Settings.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/Account/Settings.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="431">
-                  <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+                <state relative-caret-position="123">
+                  <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#30#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" column="51" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="51" />
                 </state>
               </provider>
             </entry>
@@ -107,7 +122,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/Account/Account.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="45">
-                  <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+                  <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -122,6 +137,8 @@
       <find>.root</find>
       <find>Profile/index</find>
       <find>Settings</find>
+      <find>match</find>
+      <find>props.ma</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
@@ -147,7 +164,6 @@
         <option value="$PROJECT_DIR$/src/components/Settings/index.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/components/Accordion/Accordion.less" />
-        <option value="$PROJECT_DIR$/src/components/NavigationBar/index.js" />
         <option value="$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.css" />
         <option value="$PROJECT_DIR$/src/components/Accordion/index.js" />
         <option value="$PROJECT_DIR$/src/components/Accordion/Accordion.css" />
@@ -158,9 +174,10 @@
         <option value="$PROJECT_DIR$/src/components/Account/Profile.js" />
         <option value="$PROJECT_DIR$/src/components/App/App.css" />
         <option value="$PROJECT_DIR$/src/components/Account/Account.css" />
-        <option value="$PROJECT_DIR$/src/components/App/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Account/index.js" />
         <option value="$PROJECT_DIR$/src/components/Account/Settings.js" />
+        <option value="$PROJECT_DIR$/src/components/Account/index.js" />
+        <option value="$PROJECT_DIR$/src/components/App/index.js" />
+        <option value="$PROJECT_DIR$/src/components/NavigationBar/index.js" />
       </list>
     </option>
   </component>
@@ -266,7 +283,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="activ&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/Activities/Activity.js&#10;app.css&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/App/App.css&#10;profile.js&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/Account/Profile.js&#10;activities&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/Activities&#10;acti&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/Activities/Activity.js&#10;navi&#9;null&#9;null&#10;activit&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/Activities/Activity.js&#10;accordion/in&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/Accordion/index.js&#10;accordion&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/Accordion&#10;app/in&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/App/index.js&#10;nav&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/NavigationBar/NavigationBar.css&#10;navig&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="package.j&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/package.json&#10;activ&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/Activities/Activity.js&#10;app.css&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/App/App.css&#10;profile.js&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/Account/Profile.js&#10;activities&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/Activities&#10;acti&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/Activities/Activity.js&#10;navi&#9;null&#9;null&#10;activit&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/Activities/Activity.js&#10;accordion/in&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/Accordion/index.js&#10;accordion&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/Accordion&#10;app/in&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/App/index.js&#10;nav&#9;FILE&#9;file:///Users/ronjoo/Desktop/untitled/src/components/NavigationBar/NavigationBar.css&#10;navig&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -312,7 +329,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23703000" />
+    <option name="totallyTimeSpent" value="25208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -327,7 +344,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.28" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.28" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -634,21 +651,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NavigationBar/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.js" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="52" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Accordion/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -666,34 +669,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="37" column="49" lean-forward="true" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Activities/Activity.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Activities/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -703,7 +689,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/Account/Account.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -714,22 +700,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Account/Settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Account/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="221">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="33" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Account/Settings.js">
+    <entry file="file://$PROJECT_DIR$/src/components/NavigationBar/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+        <state relative-caret-position="305">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>

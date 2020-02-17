@@ -3,9 +3,9 @@ import { Link, NavLink } from 'react-router-dom'
 import './NavigationBar.css';
 import Accordion from '../Accordion';
 
-const NavigationBar = memo(({accordionStatus, setAccordionStatus}) => {
-    console.log(accordionStatus);
-
+const NavigationBar = memo((props) => {
+    console.log(props);
+    const { accordionStatus, setAccordionStatus } = props;
     const {activities, account} = accordionStatus;
 
     const onClick = (name) => {
@@ -25,8 +25,8 @@ const NavigationBar = memo(({accordionStatus, setAccordionStatus}) => {
                         isOpen={activities}
                         onClick={onClick}
                         title="Activities">
-                        <NavLink to="/activities/recreational">Recreational</NavLink>
-                        <NavLink to="/activities/cooking">Cooking</NavLink>
+                        <NavLink to="/Untitled-Test/activities/recreational">Recreational</NavLink>
+                        <NavLink to="/Untitled-Test/activities/cooking">Cooking</NavLink>
                     </Accordion>
                 </li>
                 <li className="section-item">
@@ -36,8 +36,8 @@ const NavigationBar = memo(({accordionStatus, setAccordionStatus}) => {
                         onClick={onClick}
                         title="Account"
                     >
-                        <NavLink to="/account/profile">Profile</NavLink>
-                        <NavLink to="/account/settings">Settings</NavLink>
+                        <NavLink to="/Untitled-Test/account/profile">Profile</NavLink>
+                        <NavLink to="/Untitled-Test/account/settings">Settings</NavLink>
                     </Accordion>
                 </li>
 
