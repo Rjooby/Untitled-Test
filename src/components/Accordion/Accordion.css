@@ -27,10 +27,11 @@
     max-height: 200px;
     overflow-y: hidden;
 
-    transition: max-height 0.8s ease-in;
+    transition: max-height 0.5s ease-in;
 }
 
 .collapsable-content {
+    background-color: lightgray;
     border-top: 1px solid black;
     display: flex;
     flex-direction: column;

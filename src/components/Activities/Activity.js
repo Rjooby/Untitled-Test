@@ -6,16 +6,16 @@ export const Activity = (props) => {
         type
     } = props;
 
-    console.log('Activity', props);
-
     const [currentActivity, setActivity] = useState(null);
 
     useEffect(() => {
+        fetchData();
+    }, [])
+
+    const fetchData = () => {
         let url = `https://www.boredapi.com/api/activity`;
-        console.log(type);
         if (type) {
             url += `?type=${type}`;
-            console.log(url);
         }
 
         fetch(url)
@@ -24,17 +24,25 @@ export const Activity = (props) => {
                 console.log(res);
                 setActivity(res);
             })
-    }, [])
+    }
+
+    const onRefresh = () => {
+        fetchData();
+    }
 
 
     const renderActivity = () => {
         const { activity, type, participants } = currentActivity;
         return(
-            <ul className="activity">
-                <li>Activity: {activity}</li>
-                <li>Type: {type}</li>
-                <li>Participants: {participants}</li>
-            </ul>
+            <React.Fragment>
+                <ul className="activity">
+                    <li>Activity: {activity}</li>
+                    <li>Type: {type}</li>
+                    <li>Participants: {participants}</li>
+                </ul>
+
+                <button onClick={onRefresh}>Refresh</button>
+            </React.Fragment>
         )
     }
 
@@ -48,9 +56,7 @@ export const Activity = (props) => {
 
     return (
         <div>
-            {/*Activity {props.match.url}*/}
             {currentActivity ? renderActivity() : renderEmpty()}
-
         </div>
     )
 

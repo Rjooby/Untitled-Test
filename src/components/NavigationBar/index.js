@@ -4,7 +4,6 @@ import './NavigationBar.css';
 import Accordion from '../Accordion';
 
 const NavigationBar = memo((props) => {
-    console.log(props);
     const { accordionStatus, setAccordionStatus } = props;
     const {activities, account} = accordionStatus;
 

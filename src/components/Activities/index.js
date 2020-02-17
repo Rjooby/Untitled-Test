@@ -9,10 +9,12 @@ const Activities = (props) => {
         <div>
             Activities
             <Route
+                exact
                 path={`${props.match.url}/recreational`}
                 render={(props) => <Activity {...props} type="recreational"/>}
             />
             <Route
+                exact
                 path={`${props.match.url}/cooking`}
                 render={(props) => <Activity {...props} type="cooking"/>}
             />

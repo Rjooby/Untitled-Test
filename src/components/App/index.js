@@ -12,18 +12,18 @@ import './App.css';
 function App(props) {
     const defaultUserState = {firstName: null, lastName: null, email: null};
 
+    const history = createBrowserHistory();
+
     const [userInfo, setUserInfo] = useState(defaultUserState);
     const [isLoggedIn, setLoginStatus] = useState(false);
     const [isAccordionOpen, setAccordion] = useState({activities: false, account: false })
 
     const onLogin = (email) => {
-
         const newUser = {
             ...userInfo,
             email: email,
         };
 
-        console.log(newUser);
         setUserInfo(newUser);
         setLoginStatus(true);
     }
@@ -38,13 +38,16 @@ function App(props) {
             <div className="header">
                 <div className="logo">
                     <a href="/Untitled-Test">BORED LOGO</a>
+                    <div>Hello</div>
                 </div>
                 <div>
-                    <button onClick={() => onLogout()}>Log Out</button>
+                    <label htmlFor="logout">
+                        <button name="logout" onClick={() => onLogout()}>Log Out</button>
+                    </label>
                 </div>
             </div>
             <div className="body">
-                <Router>
+                <Router history={history}>
                     <NavigationBar
                         {...props}
                         accordionStatus={isAccordionOpen}
@@ -52,7 +55,6 @@ function App(props) {
                     />
                     <div className="app-content">
                         <Switch>
-                            <Route exact path="/Untitled-Test" render={() => <div>Whatever I want</div>}/>
                             <Route path="/Untitled-Test/activities" component={Activities} />
                             <Route path="/Untitled-Test/account"
                                    render={(props) =>(
@@ -64,6 +66,8 @@ function App(props) {
                                        />
                                    )}
                             />
+                            <Route path="/" render={() => <div>Whatever I want</div>}/>
+
                         </Switch>
                     </div>
                 </Router>

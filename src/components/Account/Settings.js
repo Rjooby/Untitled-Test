@@ -41,38 +41,46 @@ const Settings = (props) => {
     return (
         <div className="form-container">
             <form className="user-form" onSubmit={handleSubmit}>
-                <label htmlFor="firstNameInput">First Name</label>
-                <input
-                    id="firstNameInput"
-                    type="text"
-                    name="firstName"
-                    placeholder={firstName}
-                    aria-label="First Name"
-                    onChange={handleChange}
-                    // aria-required={true}
-                />
+                <label htmlFor="firstNameInput">
+                    First Name
+                    <input
+                        id="firstNameInput"
+                        type="text"
+                        name="firstName"
+                        placeholder={firstName}
+                        aria-label="First Name"
+                        onChange={handleChange}
+                        // aria-required={true}
+                    />
+                </label>
 
-                <label htmlFor="lastNameInput">Last Name</label>
-                <input
-                    id="lastNameInput"
-                    type="text"
-                    name="lastName"
-                    placeholder={lastName}
-                    aria-label="Last Name"
-                    onChange={handleChange}
-                />
+                <label htmlFor="lastNameInput">
+                    Last Name:
+                    <input
+                        id="lastNameInput"
+                        type="text"
+                        name="lastName"
+                        placeholder={lastName}
+                        aria-label="Last Name"
+                        onChange={handleChange}
+                    />
+                </label>
 
-                <label htmlFor="emailInput">Email</label>
-                <input
-                    label="emailInput"
-                    type="email"
-                    name="email"
-                    placeholder={email}
-                    aria-label="Email"
-                    onChange={handleChange}
-                />
+                <label htmlFor="emailInput">
+                    Email:
+                    <input
+                        label="emailInput"
+                        type="email"
+                        name="email"
+                        placeholder={email}
+                        aria-label="Email"
+                        onChange={handleChange}
+                    />
+                </label>
 
-                <input type="submit" value="Save"/>
+                <label htmlFor="submit">
+                    <input type="submit" name="submit" value="Save"/>
+                </label>
             </form>
         </div>
     )

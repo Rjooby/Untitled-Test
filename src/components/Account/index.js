@@ -4,15 +4,12 @@ import Settings from './Settings'
 import Profile from './Profile';
 
 const Account = (props) => {
-
     const {
         userInfo,
         setInfo,
         isLoggedIn,
         onLogin,
     } = props;
-
-    console.log(props);
 
     const [signInEmail, setEmail] = useState(null);
 
@@ -25,26 +22,36 @@ const Account = (props) => {
         setEmail(e.target.value);
     }
 
+    //  Should ideally be extracted into its own authentication component and
+    //  rendered whenever needing auth with redirect parameters preserved in URL
     if (!isLoggedIn) {
-
         return (
             <div>
                 You gotta sign in
                 <form className="signin-form" onSubmit={onSignIn}>
-                    <input type="email" onChange={handleChange}/>
-                    <input type="submit" value="Submit"/>
+
+                    <label htmlFor="emailSignin">
+                        Email:
+                        <input type="email" name="emailSignin" onChange={handleChange}/>
+                    </label>
+                    <label htmlFor="signIn">
+                        <input type="submit" name="signIn" value="Submit"/>
+                    </label>
                 </form>
             </div>
         )
     }
+    //
 
     return (
         <div>
             <Route
+                exact
                 path={`${props.match.url}/profile`}
                 render={(props) => <Profile {...props} userInfo={userInfo}/>}
             />
             <Route
+                exact
                 path={`${props.match.url}/settings`}
                 render={(props) => <Settings {...props}
                                              userInfo={userInfo}
