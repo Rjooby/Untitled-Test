@@ -9,6 +9,7 @@ const Account = (props) => {
         userInfo,
         setInfo,
         isLoggedIn,
+        onLogin,
     } = props;
 
     console.log(props);
@@ -17,14 +18,12 @@ const Account = (props) => {
 
     const onSignIn = (e) => {
         e.preventDefault();
-
+        onLogin(signInEmail);
     }
 
     const handleChange = (e) => {
-        console.log(e.target.value);
         setEmail(e.target.value);
     }
-
 
     if (!isLoggedIn) {
 
@@ -38,7 +37,6 @@ const Account = (props) => {
             </div>
         )
     }
-
 
     return (
         <div>

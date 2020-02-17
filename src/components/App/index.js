@@ -10,18 +10,37 @@ import logo from '../../logo.svg';
 import './App.css';
 
 function App(props) {
-    const [userInfo, setUserInfo] = useState({firstName: null, lastName: null, email: null})
+    const defaultUserState = {firstName: null, lastName: null, email: null};
+
+    const [userInfo, setUserInfo] = useState(defaultUserState);
     const [isLoggedIn, setLoginStatus] = useState(false);
     const [isAccordionOpen, setAccordion] = useState({activities: false, account: false })
 
-    const history = createBrowserHistory();
-    console.log(history);
+    const onLogin = (email) => {
+
+        const newUser = {
+            ...userInfo,
+            email: email,
+        };
+
+        console.log(newUser);
+        setUserInfo(newUser);
+        setLoginStatus(true);
+    }
+
+    const onLogout = () => {
+        setUserInfo(defaultUserState);
+        setLoginStatus(false);
+    }
 
     return (
         <div className="App">
             <div className="header">
                 <div className="logo">
                     <a href="/Untitled-Test">BORED LOGO</a>
+                </div>
+                <div>
+                    <button onClick={() => onLogout()}>Log Out</button>
                 </div>
             </div>
             <div className="body">
@@ -33,11 +52,13 @@ function App(props) {
                     />
                     <div className="app-content">
                         <Switch>
+                            <Route exact path="/Untitled-Test" render={() => <div>Whatever I want</div>}/>
                             <Route path="/Untitled-Test/activities" component={Activities} />
                             <Route path="/Untitled-Test/account"
                                    render={(props) =>(
                                        <Account {...props}
                                                 isLoggedIn={isLoggedIn}
+                                                onLogin={onLogin}
                                                 userInfo={userInfo}
                                                 setInfo={setUserInfo}
                                        />
