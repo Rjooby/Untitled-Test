@@ -11,7 +11,7 @@ export const Activity = (props) => {
     const [currentActivity, setActivity] = useState(null);
 
     useEffect(() => {
-        let url = `http://www.boredapi.com/api/activity`;
+        let url = `https://www.boredapi.com/api/activity`;
         console.log(type);
         if (type) {
             url += `?type=${type}`;

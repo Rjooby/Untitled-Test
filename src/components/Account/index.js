@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Settings from 'Settings'
+// import Settings from 'Settings'
 
 const Account = (props) => {
 
@@ -21,7 +21,7 @@ const Account = (props) => {
             />
             <Route
                 path={`${props.match.url}/settings`}
-                component={<Settings {...props}/>}
+                // component={<Settings {...props}/>}
             />
         </div>
     )
