@@ -1,44 +1,32 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-// import Settings from 'Settings'
+import Settings from './Settings'
+import Profile from './Profile';
 
 const Account = (props) => {
 
     const {
-        firstName,
-        lastName,
-        email
+        userInfo,
+        setInfo,
     } = props;
 
     console.log(props);
 
     return (
         <div>
-            Settings
             <Route
                 path={`${props.match.url}/profile`}
-                render={(props) => <Profile {...props}/>}
+                render={(props) => <Profile {...props} userInfo={userInfo}/>}
             />
             <Route
                 path={`${props.match.url}/settings`}
-                // component={<Settings {...props}/>}
+                render={(props) => <Settings {...props}
+                                             userInfo={userInfo}
+                                             setInfo={setInfo}
+                />}
             />
         </div>
     )
 }
-
-const Profile = (props) => {
-
-    console.log('Profile', props);
-    return (
-        <div>
-            PROFILE
-        </div>
-    )
-}
-
-
-
-
 
 export default Account

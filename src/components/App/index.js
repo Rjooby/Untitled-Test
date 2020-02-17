@@ -15,8 +15,6 @@ function App(props) {
     //  Accordion statuses
     const [isAccordionOpen, setAccordion] = useState({activities: false, account: false })
 
-    console.log(isAccordionOpen);
-
     return (
         <div className="App">
             <div className="header">
@@ -30,10 +28,17 @@ function App(props) {
                         accordionStatus={isAccordionOpen}
                         setAccordionStatus={setAccordion}
                     />
-                    <div className="appcontent">
+                    <div className="app-content">
                         <Switch>
                             <Route path="/activities" component={Activities} />
-                            <Route path="/account" component={Account}></Route>
+                            <Route path="/account"
+                                   render={(props) =>(
+                                       <Account {...props}
+                                                userInfo={userInfo}
+                                                setInfo={setUserInfo}
+                                       />
+                                   )}
+                            />
                         </Switch>
                     </div>
                 </Router>
